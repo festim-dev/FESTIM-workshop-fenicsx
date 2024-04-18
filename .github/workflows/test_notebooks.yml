@@ -70,3 +70,10 @@ jobs:
         run: |
           jupyter-nbconvert --to python task05.ipynb
           conda run python task05.py
+
+      - name: Run Task 6
+        working-directory: tasks
+        shell: bash -l {0}
+        run: |
+          jupyter-nbconvert --to python task06.ipynb
+          conda run python task06.py
