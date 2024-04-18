@@ -1,0 +1,13 @@
+name: festim-workshopx
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - fenics-dolfinx
+  - matplotlib
+  - pip>=20.1
+  - pip:
+    - git+https://github.com/festim-dev/festim@fenicsx
+    - pyparsing
+    # - ipykernel
+    - nbconvert
