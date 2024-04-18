@@ -6,8 +6,10 @@ dependencies:
   - fenics-dolfinx
   - matplotlib
   - pip>=20.1
+  - pyvista
+  - ipywidgets
   - pip:
     - git+https://github.com/festim-dev/festim@fenicsx
     - pyparsing
-    # - ipykernel
+    - ipykernel
     - nbconvert
