@@ -36,9 +36,37 @@ jobs:
           use-mamba: true
           channels: conda-forge
 
-      # - name: Run Task 1
-      #   shell: bash -l {0}
-      #   run: |
-      #     cd tasks
-      #     jupyter-nbconvert --to python task01.ipynb
-      #     conda run python task01.py
+      - name: Run Task 1
+        working-directory: tasks
+        shell: bash -l {0}
+        run: |
+          jupyter-nbconvert --to python task01.ipynb
+          conda run python task01.py
+
+      - name: Run Task 2
+        working-directory: tasks
+        shell: bash -l {0}
+        run: |
+          jupyter-nbconvert --to python task02.ipynb
+          conda run python task02.py
+
+      - name: Run Task 3
+        working-directory: tasks
+        shell: bash -l {0}
+        run: |
+          jupyter-nbconvert --to python task03.ipynb
+          conda run python task03.py
+
+      - name: Run Task 4
+        working-directory: tasks
+        shell: bash -l {0}
+        run: |
+          jupyter-nbconvert --to python task04.ipynb
+          conda run python task04.py
+
+      - name: Run Task 5
+        working-directory: tasks
+        shell: bash -l {0}
+        run: |
+          jupyter-nbconvert --to python task05.ipynb
+          conda run python task05.py
