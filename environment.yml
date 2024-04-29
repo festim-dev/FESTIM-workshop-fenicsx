@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - fenics-dolfinx
+  - fenics-dolfinx=0.7.3
   - matplotlib
   - pip>=20.1
   - pyvista
